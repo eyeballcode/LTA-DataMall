@@ -1,0 +1,29 @@
+{
+  "name": "lta-datamall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+	"cover": "istanbul cover --include-all-sources jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eyeballcode/BusTimings.git"
+  },
+  "author": "Eyeballcode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyeballcode/BusTimings/issues"
+  },
+  "homepage": "https://github.com/eyeballcode/BusTimings#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.3",
+    "pretty-seconds": "^0.2.1",
+    "sinon": "^2.1.0"
+  }
+}
