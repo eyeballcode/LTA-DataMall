@@ -8,9 +8,8 @@ api.getTimingForStop(process.argv[2] || (()=>{throw new TypeError('Please provid
 		if (busStop.timings[service].avaliableBuses) {
 			console.log(`Service ${service}`);
 			for (let bus of busStop.timings[service].buses) {
-				var timeToArrival = (bus.arrival - +new Date()) / 1000;
-				if (timeToArrival > 0)
-					console.log(`  The bus is arriving in ${prettySeconds((bus.arrival - +new Date()) / 1000)}`);
+				if (bus.secondsToArrival > 0)
+					console.log(`  The bus is arriving in ${prettySeconds(bus.secondsToArrival)}`);
 				else
 					console.log('  The bus has arrived.');
 			}
