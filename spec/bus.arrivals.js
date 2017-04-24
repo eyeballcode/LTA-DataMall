@@ -26,4 +26,13 @@ describe('The Bus Timing API', () => {
 	it('should not throw an exception if an API key is provided', () => {
 		expect(() => new BusTimingAPI('key')).not.toThrow();
 	});
+	it('should return a 0 if the bus has arrived', () => {
+		var api = new BusTimingAPI('key', {
+            requester: busTimingAPIMock(28009)
+        });
+        api.getTimingForStop(28009, busStop => {
+			expect(busStop.timings['66'].buses[1].secondsToArrival).toBeGreaterThan(0);
+			expect(busStop.timings['66'].buses[0].secondsToArrival).toEqual(0);
+		});
+	});
 });

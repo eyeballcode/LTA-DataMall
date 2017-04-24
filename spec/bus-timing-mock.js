@@ -21,6 +21,27 @@ module.exports = (stopID) => {
 					Feature: ''
 				}
 			}];
+			break;
+		case 28009: // Jurong East Int.
+            serviceList = [{
+                ServiceNo: '66',
+                NextBus: {
+                    EstimatedArrival: new Date(+new Date() -5000).toISOString(),
+                    Load: 'Seats Avaliable',
+                    Feature: 'WAB'
+                },
+                SubsequentBus: {
+                    EstimatedArrival: new Date(+new Date() + 5000).toISOString(),
+                    Load: 'Seats Avaliable',
+                    Feature: 'WAB'
+                },
+                SubsequentBus3: {
+                    EstimatedArrival: '',
+                    Load: '',
+                    Feature: ''
+                }
+            }];
+
 	}
 
 	return (busStop, callback) => {
