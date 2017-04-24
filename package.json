@@ -1,7 +1,7 @@
 {
   "name": "lta-datamall",
   "version": "1.0.0",
-  "description": "",
+  "description": "An API to work with LTA's DataMall",
   "main": "index.js",
   "scripts": {
     "test": "jasmine",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/eyeballcode/BusTimings.git"
+    "url": "git+ssh://git@github.com/eyeballcode/LTA-DataMall.git"
   },
   "author": "Eyeballcode",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eyeballcode/BusTimings/issues"
+    "url": "https://github.com/eyeballcode/LTA-DataMall/issues"
   },
-  "homepage": "https://github.com/eyeballcode/BusTimings#readme",
+  "homepage": "https://github.com/eyeballcode/LTA-DataMall#readme",
   "dependencies": {
     "request": "^2.81.0"
   },
@@ -24,6 +24,5 @@
     "istanbul": "^0.4.5",
     "jasmine": "^2.5.3",
     "pretty-seconds": "^0.2.1",
-    "sinon": "^2.1.0"
   }
 }
