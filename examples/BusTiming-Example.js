@@ -1,7 +1,7 @@
 const BusTimingAPI = require('..').BusTimingAPI,
 	prettySeconds = require('pretty-seconds');
 
-var api = new BusTimingAPI('N55kHDJjR5WeyjqxWkYjsg==');
+var api = new BusTimingAPI('<insert api key here>');
 
 api.getTimingForStop(process.argv[2] || (()=>{throw new TypeError('Please provide a bus stop code.')})(), busStop => {
 	for (let service in busStop.timings) 
