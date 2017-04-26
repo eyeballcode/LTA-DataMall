@@ -10,4 +10,4 @@ api.getBusRoutesOperatingNow(routes => {
 Service ${serviceID}
 	Operator: ${service.operator}`);
 	}
-});
+}, 5);
