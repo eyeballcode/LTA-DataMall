@@ -16,3 +16,8 @@
 ------------
 
 - Now includes the Bus Routes API for details on currently operating routes.
+
+# V1.3.0
+------------
+
+- Added the Bus Stops API to show bus stops with buses currently servicing them.
