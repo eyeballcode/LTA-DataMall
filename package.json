@@ -1,6 +1,6 @@
 {
   "name": "lta-datamall",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "An API to work with LTA's DataMall",
   "main": "index.js",
   "scripts": {
