@@ -16,8 +16,8 @@ describe('The Bus Timing API', () => {
 			requester: busTimingAPIMock(49121)
 		});
 		api.getTimingForStop(49121, busStop => {
-			expect(busStop.timings['925'].avaliableBuses).toEqual(1);
-			expect(busStop.timings['925'].buses.length).toEqual(1);
+			expect(busStop.timings[925].availableBuses).toEqual(1);
+			expect(busStop.timings[925].buses.length).toEqual(1);
 		});
 	});
 	it('should throw an exception if no API key is provided', () => {
